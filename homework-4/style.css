@@ -1,0 +1,22 @@
+header {
+    height: 60px;
+    background-color: #e1aa61;
+}
+
+footer {
+    height: 300px;
+    background-color: #ae88d9;
+    color: #fff;
+}
+
+.men-image {
+    height: 100px;
+}
+
+.quote {
+    background-color: #f7dfc1;
+}
+
+.move {
+    height: 200px;
+}
