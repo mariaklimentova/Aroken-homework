@@ -1,0 +1,36 @@
+.open-sans-italic {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-variation-settings: "wdth"100;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.old-standard {
+    font-family: "Old Standard TT", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.text-through {
+    text-decoration: line-through;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-purpl {
+    color: purple;
+    word-spacing: 30px;
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-shadow: 0.5px 0.5px 1.2px purple;
+}
+
+.text-duble-line {
+    letter-spacing: 5px;
+    text-decoration: underline double;
+}
