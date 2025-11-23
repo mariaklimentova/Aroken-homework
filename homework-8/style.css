@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    height: 300px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: #e6e4e4;
+}
+
+article {
+    width: 200px;
+    min-height: 175px;
+    margin: 8px;
+    padding: 15px;
+    font-size: 1.5em;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #ddca8a;
+    box-shadow: inset 0px 0px 20px 8px rgba(128, 128, 128, 0.848);
+
+}
