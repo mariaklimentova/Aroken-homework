@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+}
+
+fieldset {
+    max-width: 180px;
+    border-radius: 5px;
+    border: 1px solid #767676;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 20px;
+    max-height: 100px;
+}
+
+button, input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.block-element {
+    display: block;
+    margin-top: 5px;
+    min-width: 150px;
+    padding: 2px 6px;
+}
