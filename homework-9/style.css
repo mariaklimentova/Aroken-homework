@@ -3,7 +3,7 @@ body {
 }
 
 fieldset {
-    max-width: 180px;
+    max-width: 300px;
     border-radius: 5px;
     border: 1px solid #767676;
 }
@@ -26,6 +26,7 @@ button, input[type="checkbox"] {
 .block-element {
     display: block;
     margin-top: 5px;
-    min-width: 150px;
+    min-width: 250px;
     padding: 2px 6px;
+
 }
