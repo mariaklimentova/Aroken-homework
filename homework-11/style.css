@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-container {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 105px;
+    font-family: sans-serif;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a {
+    color: black;
+}
+
+.header__icon-img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list__item {
+    padding: 0 15px;
+    list-style: none; 
+    white-space: nowrap;
+}
+
+.header-link__phone {
+    text-decoration: none;
+}
+
