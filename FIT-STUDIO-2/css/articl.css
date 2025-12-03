@@ -73,6 +73,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     align-items: center;
 }
 
+.article__decor-wrapper{
+    position: relative;
+}
+
 .article__play-button {
     width: 60px;
     height: 60px;
@@ -123,4 +127,5 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .article__decor-wrapper-2::before {
     transform: translate( 1042px, 328px);
+
 }
