@@ -108,10 +108,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     transform: translateX(-16px);
 }
 
-/* .article__decor-wrapper{
-    position: relative;
-} */
-
 .article__decor-wrapper::before {
     content: "";
     background: url(../images/decor-backround.svg);
@@ -129,3 +125,4 @@ h1, h2, h3, h4, h5, h6, p, ul {
     transform: translate( 1042px, 328px);
 
 }
+
