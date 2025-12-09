@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block-2</title>
+    <link rel="stylesheet" href="css/normalizi.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form class="form">
+        <legend>Ваши личные данные</legend>
+        <label>
+            <span>Ваше имя</span>
+            <input type="text" name="first-name" placeholder="Имя" required class="block-element">
+        </label>
+        <label>
+            <span>Ваш возраст</span>
+            <input type="number" name="age" inputmode="numeric" placeholder="Возраст" required class="block-element" disabled>
+        </label>
+        <label>
+            <span>Ваш номер телефона</span>
+            <input type="tel" name="phone" inputmode="tel" placeholder="Номер телефона" required class="block-element">
+        </label>
+        <label>
+            <span>Ваша почта</span>
+            <input type="email" name="email" inputmode="email" placeholder="Почта" required class="block-element">
+        </label>
+        <label>
+            <span>Сообщение</span>
+            <textarea name="message" placeholder="Ваше сообщение" class="block-element" required></textarea>
+        </label>
+        <label class="checkbox-label">
+            <input class="checkbox" type="checkbox" name="agreement" required>
+            <span>Я принимаю правила</span>
+        </label>
+        <button class="button-send" type="submit" disabled>Отправить</button>
+    </form>
+</body>
+
+</html>
