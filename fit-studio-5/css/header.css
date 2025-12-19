@@ -1,0 +1,29 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #d3cbd9;
+}
+
+.header__phone {
+    text-align: right;
+}
+
+.header__phone-text {
+    margin-bottom: 8px;
+}
+
+.header__phone-link {
+    font-weight: 500;
+    font-size: 18px;
+    color: #2C332F;
+    transition: opacity 0.3s;
+}
+
+.header__phone-link:hover {
+    opacity: 0.3;
+}
+
