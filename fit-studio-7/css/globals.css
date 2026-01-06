@@ -1,0 +1,130 @@
+html {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+*,
+::before,
+::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 375px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-mg {
+    margin-top: 140px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+a,
+button {
+    outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid #3596ed;
+    outline-offset: 1px;
+}
+
+img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+}
+
+.title-medium {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+}
+
+.text-subscribtion {
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #858e8a;
+}
+
+.decore::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(50% - 250px);
+    height: 48px;
+    background: url(../images/decor-icon.svg) repeat-x;
+}
+
+@media (width <= 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .hero::after {
+        display: none;
+    }
+}
+
+@media (width <= 768px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .title-medium {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (width <= 576px) {
+    .title-medium {
+        font-size: 34px;
+    }
+}
