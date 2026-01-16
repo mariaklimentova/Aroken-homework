@@ -1,0 +1,24 @@
+:root {
+    /* font-family */
+    --font-family: "Montserrat", sans-serif;
+
+    /* color */
+	--main-color: #fff;
+	--accent-color: #ffea00;
+	--bg-color: #2a2a29;
+	--secondary-color: #c9c69b;
+    --disable-color: #5d5d56;
+    --shadow-color: #181817;
+
+    /* container */
+    --container-width: 1240px;
+    --container-padding: 15px;
+
+    /* transitions */
+    --transition-time: 0.3s;
+
+    /* layers */
+    --layer-1: 1;
+    --layer-2: 2;
+    --layer-3: 3;
+}

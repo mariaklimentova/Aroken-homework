@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/icons/nike-favicon-icon.svg"
+      type="image/x-icon"
+    />
+    <script defer src="./js/index.js" type="module"></script>
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Nike Air Mag</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container container">
+        <a href="/" class="header__logo logo">
+          <img
+            class="logo__img"
+            src="./icons/logo-nike.svg"
+            width="50"
+            height="20"
+            alt="логотип nike"
+          />
+        </a>
+        <nav class="header__menu menu " id="header__menu" aria-label="Главное меню">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#air-mag" class="menu__link" lang="en">Air Mag</a>
+            </li>
+            <li class="menu__item">
+              <a href="#sizes" class="menu__link">Размеры</a>
+            </li>
+            <li class="menu__item">
+              <a href="#characteristics" class="menu__link">Характеристики</a>
+            </li>
+            <li class="menu__item">
+              <a href="#top-models" class="menu__link">Другие ТОП модели</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a class="header__actions-link" href="/">Сделать заказ</a>
+          <div class="header__actions-tools">
+            <button class="header__actions-tools-btn" title="Поиск" aria-label="Поиск">
+              <svg width="24" height="24">
+                <use
+                  class="header__action-tools-icon"
+                  href="./icons/sprite.svg#search"
+                ></use>
+              </svg>
+            </button>
+            <button class="header__actions-tools-btn" title="Корзина" aria-label="Корзина">
+              <svg width="24" height="24">
+                <use
+                  class="header__action-tools-icon"
+                  href="./icons/sprite.svg#basket"
+                ></use>
+              </svg>
+            </button>
+            <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu">
+              <svg width="24" height="24">
+                <use
+                  class="burger__icon-menu"
+                  href="./icons/sprite.svg#menu-burger"
+                ></use>
+                <use
+                  class="burger__icon-cross"
+                  href="./icons/sprite.svg#menu-cross"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
