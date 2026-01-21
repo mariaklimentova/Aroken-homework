@@ -1,0 +1,101 @@
+@media (width > 576px) {
+  .air-mag {
+    padding-bottom: 93px;
+  }
+  
+  .air-mag__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (width <= 576px) {
+  .air-mag {
+    padding-bottom: 80px;
+  }
+  
+  .air-mag__title {
+    margin-bottom: 20px;
+  }
+}
+
+.air-mag__description {
+  display: flex;
+  gap: 14px;
+}
+
+.air-mag__description::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 131px;
+  height: 40px;
+  background: url(../../icons/rectangle-icon.svg);
+  transform: translateX(-13px);
+}
+
+@media (width > 992px) {
+  .air-mag__description {
+    margin-bottom: 20px;
+  }
+}
+
+@media (width <= 992px) {
+  .air-mag__description {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+
+.air-mag__info-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+@media (width > 992px) {
+  .air-mag__info-wrapper {
+    gap: 40px;
+  }
+}
+
+@media (width <= 992px) {
+  .air-mag__info-wrapper {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+.air-mag__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.air-mag__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width > 992px) {
+  .air-mag__list {
+    gap: 40px;
+    max-width: 293px;
+    flex-shrink: 0;
+    transform: translateY(97px);
+  }
+}
+
+@media (width <= 992px) {
+  .air-mag__list {
+    gap: 20px;
+    max-width: 700px;
+  }
+}
+
+.air-mag__item::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 33px;
+  margin-bottom: 5px;
+  background-image: url(../../icons/double-check-icon.svg);
+  transform: translateX(-6px);
+}

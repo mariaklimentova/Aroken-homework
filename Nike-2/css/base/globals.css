@@ -1,0 +1,51 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+.page__body {
+  /* min-width для адаптива */
+  min-width: 375px;
+  background-color: var(--bg-color);
+}
+
+.page__body--no-scroll {
+  overflow-y: hidden;
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.text-regular,
+.text-light {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--main-color);
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-light {
+  font-weight: 300;  
+}
+
+.title-md {
+  font-weight: 600;
+  /* min-width=375px max-width=992px */
+  font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
+  text-transform: uppercase;
+  color: var(--main-color);
+}

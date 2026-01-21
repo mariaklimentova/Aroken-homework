@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="arrow-right" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M6 17L11 12L6 7M13 17L18 12L13 7" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+</svg>
+
+<!-- stroke="white" -->
