@@ -1,0 +1,20 @@
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu__link {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 130%;
+    color: var(--main-color);
+    transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+    .menu__link:hover {
+        color: var(--accent-color);
+    }
+}
