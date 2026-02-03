@@ -1,0 +1,106 @@
+.top-models__list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.top-models__card {
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  -webkit-box-shadow:
+    0 0 34px 4px var(--accent-glow-color),
+    inset 0 0 34px 4px var(--accent-glow-color);
+          box-shadow:
+    0 0 34px 4px var(--accent-glow-color),
+    inset 0 0 34px 4px var(--accent-glow-color);
+}
+
+.top-models__product-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  min-height: 204px;
+  color: var(--main-color);
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .top-models__product-link:hover {
+    color: var(--accent-color);
+  }
+}
+
+@media (width> 567px) {
+  .top-models__product-link {
+    padding: 30px;
+  }
+}
+
+@media (width <= 567px) {
+  .top-models__product-link {
+    padding: 20px;
+  }
+}
+
+.top-models__content-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+@media (width > 768px) {
+  .top-models__content-card {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+.top-models__card-title {
+  color: currentColor;
+}
+
+@media (width > 768px) {
+  .top-models__card-title {
+    max-width: 139px;
+  }
+}  
+
+@media (width <= 480px) {
+  .top-models__card-title {
+    max-width: 139px;
+  }
+}
+
+.top-models__card-icon {
+  stroke: currentColor;
+}
+
+.top-models__img-wrapper {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+}
+
+.top-models__product-img {
+    width: 100%;
+}
+
+@media (width <= 480px) {
+  .top-models__product-img {
+    max-width: 156px;
+  }
+}

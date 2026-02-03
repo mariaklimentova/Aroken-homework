@@ -1,0 +1,32 @@
+@media (width > 768px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media (width <= 768px) {
+    .burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        z-index: var(--layer-3);
+        height: 24px;
+        width: 24px;
+    }
+
+    .burger__icon-menu,
+    .burger--open .burger__icon-cross {
+        display: block;
+    }
+
+    .burger__icon-cross,
+    .burger--open .burger__icon-menu {
+        display: none;
+    }
+}

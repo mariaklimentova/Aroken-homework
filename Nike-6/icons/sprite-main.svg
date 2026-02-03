@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M6 17L11 12L6 7M13 17L18 12L13 7" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="arrow-skrol" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <path d="M30 11.6667L21.6667 20L30 28.3334M18.3333 11.6667L10 20L18.3333 28.3334" 
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+</svg>
+
+
