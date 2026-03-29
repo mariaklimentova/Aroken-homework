@@ -61,8 +61,8 @@ const createTodoElement = text => {
 };
 
 const handleCreateTodo = (todos, text) => {
-  createTodo(todos, text)
-  todosContainer.prepend(createTodoElement(todos[todoKeys.text]));
+  const result = createTodo(todos, text)
+  todosContainer.prepend(createTodoElement(result[todoKeys.text]));
 }
 
 handleCreateTodo(todos, "полить цветы")
