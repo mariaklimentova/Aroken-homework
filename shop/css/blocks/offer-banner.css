@@ -1,0 +1,80 @@
+.offer-banner {
+  background-color: var(--black-color);
+  display: block;
+}
+
+.offer-banner--close {
+  display: none;
+}
+
+.offer-banner__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2px;
+  padding: 10px 40px 10px 0;
+}
+
+.offer-banner__link,
+.offer-banner__text {
+  margin: 0;
+  color: var(--white-color);
+}
+
+@media (width > 768px) {
+  .offer-banner__text {
+    font-size: 14px;
+  }
+}
+
+@media (width <= 768px) {
+  .offer-banner__text {
+    display: none;
+  }
+}
+
+.offer-banner__link {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.7px;
+}
+
+.offer-banner__cross-btn {
+  position: absolute;
+  right: 0;
+  line-height: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--white-color);
+}
+
+.offer-banner__link,
+.offer-banner__cross-btn {
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .offer-banner__link:hover {
+    color: var(--hover-color);
+  }
+
+  .offer-banner__cross-btn:hover {
+    color: var(--hover-color);
+  }
+}
+
+.offer-banner__cross-icon {
+  fill: currentColor;
+}

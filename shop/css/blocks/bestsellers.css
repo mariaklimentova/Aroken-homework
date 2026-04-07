@@ -1,0 +1,26 @@
+@media (width > 768px) {
+  .bestsellers__title {
+    margin-top: 72px;
+  }
+}
+
+@media (width <= 768px) {
+  .bestsellers__title {
+    margin-top: 52px;
+  }
+}
+
+@media (width > 576px) {
+  .bestsellers__button {
+    display: block;
+    margin: auto;
+    margin-top: 36px;
+  }
+}
+
+@media (width <= 576px) {
+  .bestsellers__button {
+    width: 100%;
+    margin-top: 27px;
+  }
+}

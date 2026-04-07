@@ -1,0 +1,214 @@
+.footer {
+  position: relative;
+  background-color: var(--bg-color);
+  z-index: 0;
+  margin-top: auto;
+}
+
+@media (width > 768px) {
+  .footer {
+    padding-top: 140px;
+  }
+}
+
+@media (width <= 768px) {
+  .footer {
+    padding-top: 180px;
+  }
+}
+
+@media (width <= 383px) {
+  .footer {
+    padding-top: 195px;
+  }
+}
+
+.footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@media (width > 768px) {
+  .footer__main {
+    gap: 15px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (width <= 768px) {
+  .footer__main {
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+}
+
+.footer__main-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (width > 768px) {
+  .footer__main-social {
+    max-width: 248px;
+  }
+}
+
+@media (width <= 768px) {
+  .footer__main-social {
+    width: 100%;
+    gap: 17px;
+  }
+}
+
+.footer__social-logo {
+  /* width:768/1200 */
+  font-size: clamp(28px, 1.194rem + 1.16vw, 33px);
+}
+
+.footer__social-text {
+  font-size: 14px;
+  line-height: 157%;
+  padding-bottom: 10px;
+}
+
+@media (width <= 768px) {
+  .footer__social-text {
+    max-width: 576px;
+  }
+}
+
+.footer__social-icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social-icon {
+  -webkit-transition: all var(--transition-time);
+  -o-transition: all var(--transition-time);
+  transition: all var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .footer__social-icon:hover {
+    width: 28px;
+    height: 28px;
+    border-radius: 60px;
+    -webkit-box-shadow: 0 0 6px 2px var(--hover-color);
+            box-shadow: 0 0 6px 2px var(--hover-color);
+  }
+}
+
+.footer__main-list,
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+}
+
+@media (width <= 576px) {
+  .footer__main-list {
+    width: 31%;
+  }
+}
+
+.footer__list-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  /* width:768/1200 */
+  font-size: clamp(14px, 0.653rem + 0.46vw, 16px);
+  line-height: 113%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+.footer__list-link {
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .footer__list-link:hover {
+    color: var(--black-color);
+  }
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (width > 768px) {
+  .footer__bottom {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (width <= 768px) {
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+    padding-bottom: 77px;
+  }
+}
+
+.footer__wallets-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.footer__wallets-icon {
+  -webkit-transition: all var(--transition-time);
+  -o-transition: all var(--transition-time);
+  transition: all var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .footer__wallets-icon:hover {
+    width: 48px;
+    height: 31px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 6px 2px var(--hover-color);
+            box-shadow: 0 0 6px 2px var(--hover-color);
+  }
+}

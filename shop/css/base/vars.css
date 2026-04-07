@@ -1,0 +1,23 @@
+:root {
+  /* font-family */
+  --font-family: Inter, sans-serif;
+  --title-font-family: "Geologica", sans-serif;
+  --logo-font-family: "Integralcf", sans-serif;
+
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  /* colors */
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --bg-color: #f0f0f0;
+  --bg-color-2: #f0eeed;
+  --border-color:  #e6e6e6;
+  --hover-color: #838383c8;
+  --transparent-color-text: #666666;
+  --transparent-color-input-text: #999999; 
+
+    /* transitions */
+  --transition-time: 0.4s;
+}

@@ -1,0 +1,20 @@
+@media (width > 992px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (width <= 992px) {
+  .burger {
+    margin-right: 16px;
+    z-index: 2;
+  }
+
+  .burger--open {
+    display: block;
+  }
+
+  .burger--close {
+    display: none;
+  }
+}

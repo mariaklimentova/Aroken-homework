@@ -1,0 +1,92 @@
+@media (width > 768px) {
+  .rating-stars {
+    height: 18px;
+    margin-right: 14px;
+    background-image: url(../../icons/rating-stars/rating-big-star.svg);
+    background-repeat: repeat-x;
+    background-size: 18px;
+  }
+}
+
+@media (width <= 768px) {
+  .rating-stars {
+    height: 16px;
+    margin-right: 11px;
+    background-image: url(../../icons/rating-stars/rating-sm-star.svg);
+    background-repeat: repeat-x;
+    background-size: 16px;
+  }
+}
+
+/* колличесвто звезд в рейтинге */
+@media (width > 768px) {
+  .rating--5-stars {
+    width: 90px;
+  }
+  .rating--4-5-stars {
+    width: 81px;
+  }
+  .rating--4-stars {
+    width: 72px;
+  }
+  .rating--3-5-stars {
+    width: 63px;
+  }
+  .rating--3-stars {
+    width: 54px;
+  }
+  .rating--2-5-stars {
+    width: 45px;
+  }
+  .rating--2-stars {
+    width: 36px;
+  }
+  .rating--1-5-stars {
+    width: 27px;
+  }
+  .rating--1-stars {
+    width: 18px;
+  }
+}
+
+@media (width <= 768px) {
+  .rating--5-stars {
+    width: 80px;
+  }
+  .rating--4-5-stars {
+    width: 72px;
+  }
+  .rating--4-stars {
+    width: 64px;
+  }
+  .rating--3-5-stars {
+    width: 56px;
+  }
+  .rating--3-stars {
+    width: 48px;
+  }
+  .rating--2-5-stars {
+    width: 40px;
+  }
+  .rating--2-stars {
+    width: 32px;
+  }
+  .rating--1-5-stars {
+    width: 24px;
+  }
+  .rating--1-stars {
+    width: 16px;
+  }
+}
+
+.rating-current {
+  color: var(--black-color);
+}
+
+@media (width <= 768px) {
+  .rating-current,
+  .rating-max {
+    font-size: 12px;
+  }
+}
+

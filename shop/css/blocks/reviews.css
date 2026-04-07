@@ -1,0 +1,126 @@
+.reviews__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__title {
+  text-align: left;
+}
+
+.reviews__arrows-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.reviews__arrow-btn--right,
+.reviews__arrow-btn--left {
+  fill: var(--black-color);
+}
+
+.reviews__arrow-icon--right {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (any-hover: hover) {
+  .reviews__arrow-btn--right:hover,
+  .reviews__arrow-btn--left:hover {
+    fill: var(--hover-color);
+  }
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+@media (width > 576px) {
+  .reviews__slider::before,
+  .reviews__slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+  }
+
+  /* Левая маска */
+  .reviews__slider::before {
+    left: 0;
+    mask-image: linear-gradient(to right, black 0%, black 20%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 0%, black 20%, transparent 100%);
+  }
+
+  /* Правая маска */
+  .reviews__slider::after {
+    right: 0;
+    mask-image: linear-gradient(to left, black 0%, black 20%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, black 0%, black 20%, transparent 100%);
+  }
+}
+
+.reviews__card-wrapper {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.reviews__card {
+  padding-block: 28px;
+  padding-inline: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  width: 400px;
+  height: 240px;
+  scroll-snap-align: center;
+}
+
+@media (width > 768px) {
+  .reviews__card {
+    min-width: 400px;
+    height: 240px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__card {
+    min-width: 285px;
+    height: 240px;
+  }
+}
+
+.reviews__name {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.reviews__text {
+  margin-top: 12px;
+}
