@@ -2,7 +2,6 @@
   font-family: var(--font-family);
   font-weight: 400;
   color: var(--black-color);
-  scroll-behavior: smooth;
   /* отступ при прокрутке якорной ссылки */
   scroll-padding-top: 65px;
   scrollbar-gutter: stable;

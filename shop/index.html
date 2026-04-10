@@ -62,28 +62,39 @@
         </a>
         <nav class="header__menu" id="header__menu" aria-label="Главное меню">
           <ul class="header__menu-list">
-            <li class="header__menu-item header__menu-item-more" id="shops-btn">
-              <a href="#" class="header__menu-link">Магазин</a>
-              <button
-                class="header__menu-btn"
-                aria-label="Кнопка показать больше"
-                title="Показать больше">
-                <svg class="header__menu-icon" width="16" height="16">
-                  <use
-                    class="header__menu-btn-icon"
-                    href="./icons/sprite-ui-icon.svg#arrow-down"></use>
-                </svg>
-              </button>
+            <li class="header__menu-item">
+              <div class="header__menu-item-more">
+                <a href="#" class="header__menu-link" id="shops-link"
+                  >Магазин</a
+                >
+                <button
+                  class="header__menu-btn"
+                  id="shops-btn"
+                  aria-label="Кнопка показать больше"
+                  title="Показать больше">
+                  <svg class="header__menu-icon" width="16" height="16">
+                    <use
+                      class="header__menu-btn-icon"
+                      href="./icons/sprite-ui-icon.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
               <div class="header__shops-list-wrapper" id="shops-wrapper">
                 <ul class="header__shops-list">
                   <li class="header__shops-item">
-                    <a href="#" class="header__menu-link header__shops-link">ул.Ленина д.16/2</a>
+                    <a href="#" class="header__menu-link header__shops-link"
+                      >ул.Ленина д.16/2</a
+                    >
                   </li>
                   <li class="header__shops-item">
-                    <a href="#" class="header__menu-link header__shops-link">ул.Папанина д.57</a>
+                    <a href="#" class="header__menu-link header__shops-link"
+                      >ул.Папанина д.57</a
+                    >
                   </li>
                   <li class="header__shops-item">
-                    <a href="#" class="header__menu-link header__shops-link">ул.Мира д.162</a>
+                    <a href="#" class="header__menu-link header__shops-link"
+                      >ул.Мира д.162</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -596,7 +607,7 @@
             </div>
           </div>
           <div class="reviews__slider">
-            <div class="reviews__card-wrapper" id="swiper-track">
+            <div class="reviews__card-wrapper" id="reviews-wrapper">
               <article class="reviews__card swiper-slide">
                 <div class="reviews__rating rating-stars rating--5-stars"></div>
                 <div class="reviews__name">

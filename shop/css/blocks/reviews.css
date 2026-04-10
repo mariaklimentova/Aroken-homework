@@ -8,11 +8,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .reviews__title {
@@ -33,8 +33,8 @@
 
 .reviews__arrow-icon--right {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media (any-hover: hover) {
@@ -64,15 +64,30 @@
   /* Левая маска */
   .reviews__slider::before {
     left: 0;
-    mask-image: linear-gradient(to right, black 0%, black 20%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 0%, black 20%, transparent 100%);
+    mask-image: linear-gradient(
+      to right,
+      black 0%,
+      black 20%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      black 0%,
+      black 20%,
+      transparent 100%
+    );
   }
 
   /* Правая маска */
   .reviews__slider::after {
     right: 0;
     mask-image: linear-gradient(to left, black 0%, black 20%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to left, black 0%, black 20%, transparent 100%);
+    -webkit-mask-image: linear-gradient(
+      to left,
+      black 0%,
+      black 20%,
+      transparent 100%
+    );
   }
 }
 
@@ -84,8 +99,19 @@
   gap: 20px;
   overflow-x: auto;
   scrollbar-width: none;
-  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+
+.reviews__card-wrapper.dragging {
+  scroll-behavior: auto;
+  cursor: grabbing;
+}
+
+.reviews__card-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .reviews__card {
@@ -95,7 +121,9 @@
   border-radius: 20px;
   width: 400px;
   height: 240px;
-  scroll-snap-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: auto;
 }
 
 @media (width > 768px) {
@@ -117,8 +145,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -ms-flex-align: end;
+  align-items: end;
 }
 
 .reviews__text {

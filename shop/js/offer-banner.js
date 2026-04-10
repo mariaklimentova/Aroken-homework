@@ -2,9 +2,6 @@ export const closeBanner = () => {
   const closeBtnBanner = document.getElementById("closeBtn");
   const banner = document.getElementById("myModal");
 
-  console.log("нажали");
-  
-
   if (closeBtnBanner && banner) {
     const closeHandler = () => {
       banner.classList.add("offer-banner--close");
